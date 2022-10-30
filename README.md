@@ -1,3 +1,8 @@
+# Recipe App
+
+Front-end built with React. Also, used Axios and uuid version 4.
+Source https://youtu.be/d1vT4kkTCaw from Lasha Noz's "food-searching-app"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
