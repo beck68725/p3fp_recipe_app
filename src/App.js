@@ -9,7 +9,6 @@ const App = () => {
     const[query, setQuery] = useState("");
     const[recipes, setRecipes] = useState([])
     const[alert, setAlert] = useState("");
-    const mongoose = require('mongoose')
 
     const APP_ID = "4af60fe4";
 
