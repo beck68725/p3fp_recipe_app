@@ -1,14 +1,14 @@
 // dependencies
 const express = require('express')
 const comment = express.Router()
-const Comment = require('../models/baker.js')
+const Comment = require('../models/comments.js')
 
 //index
 comment.get('/', (req, res) => {
     Comment.find()
-    .populate('breads')
-    .then(foundBakers => {
-        res.send(foundBakers)
+    .populate('comment')
+    .then(foundComment => {
+        res.send(foundComment)
     })
 })
 // show 
