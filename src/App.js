@@ -42,17 +42,21 @@ const App = () => {
     };
 
   return (
-    <div className='App'>
-      <h1>Becky's Recipe App</h1>
-      <form className='search-form' onSubmit={onSubmit}>
-          {alert !==""&& <Alert alert={alert} />}
-          <input type="text" placeholder="Search Food" autoComplete="off" onChange={onChange} value={query}/>
-          <input type="submit" value="search"/>
-      </form>  
-      <div className="recipes">
-                {recipes !== [] && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
-      </div> 
-    </div>
+      <><head>
+          <script src="https://developer.edamam.com/attribution/badge.js"></script>
+      </head>
+      <div className='App'>
+              <h1>Becky's Recipe App</h1>
+              <form className='search-form' onSubmit={onSubmit}>
+                  {alert !== "" && <Alert alert={alert} />}
+                  <input type="text" placeholder="Search Food" autoComplete="off" onChange={onChange} value={query} />
+                  <input type="submit" value="search" />
+              </form>
+              <div className="recipes">
+                  {recipes !== [] && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
+              </div>
+              <footer><div id="edamam-badge" data-color="white"></div></footer>
+          </div></>
   );
 };
 
