@@ -32,4 +32,4 @@ comment.delete('/:id', (req, res) => {
       })
 })
 // export
-module.exports = comment                    
+module.exports = comment
